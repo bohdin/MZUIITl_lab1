@@ -23,3 +23,7 @@ jobs:
           context: .
           push: true
           tags: bohdin/myapp:latest
+      - name: Lint HTML
+        run: |
+          npm install -g htmlhint
+          htmlhint index.html
